@@ -1,4 +1,9 @@
 'use strict';
 
-console.log('test');
-console.log('sdkfjsdkjfs');
+const CHOICES = ['Rock', 'Paper', 'Scissors'];
+
+function getComputerChoice() {
+    return CHOICES[Math.floor(Math.random() * CHOICES.length)];
+}
+
+console.log(getComputerChoice());
